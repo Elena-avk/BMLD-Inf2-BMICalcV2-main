@@ -12,7 +12,7 @@ login_manager = LoginManager(data_manager)
 login_manager.login_register()   # open login/register page
 
 # load the data from the persistent storage into the session state
-data_manager.load_app_data(
+data_manager.load_user_data(
     session_state_key='data_df', 
     file_name='data.csv', 
     initial_value = pd.DataFrame(), 
